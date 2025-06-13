@@ -1,4 +1,4 @@
-# 🫁 Lung-Colon-Disease Image Classification
+# 🫁 Lung-Colon-Disease-Image-Classification
 
 ## Project Overview
 
@@ -86,19 +86,13 @@ This will open the app in your default browser. Upload an image to get the predi
 ## Project Folder Structure
 
 ```
-Lung-Colon-Disease-Classification/
+lung-colon-disease-classification/
 │
-├── colon_aca/ # Colon adenocarcinoma images
-├── colon_n/ # Colon benign (normal) tissue images
-├── lung_aca/ # Lung adenocarcinoma images
-├── lung_n/ # Lung benign (normal) tissue images
-├── lung_scc/ # Lung squamous cell carcinoma images
-│
-├── model/ # Trained TensorFlow model
-├── app/ # Streamlit app code
-├── Lung_Colon_Image Classifier.ipnyb/ # Training and preprocessing notebook
-├── README.md # Project documentation
-└── requirements.txt
+├── app.py                            # Streamlit application for image prediction
+├── Lung_Colon_Image Classifier.ipynb # Jupyter Notebook for training and evaluation
+├── requirements.txt                  # Python dependencies
+├── class_indices.json                # Mapping of class indices to class labels
+└── model.keras                       # Trained model (user must download and place here manually)
 ```
 > The original `colon_images_set/` and `lung_images_set/` folders were flattened for compatibility with `image_dataset_from_directory`.
 
