@@ -39,14 +39,49 @@ This project uses **TensorFlow** to build a convolutional neural network capable
 
 - Framework: **TensorFlow (Keras)**
 - Architecture: CNN
+- Format: `.keras` model file
 - Test Set Accuracy: **96.94%**
 
 The trained model is available here:  
-**[Model download link to be added here]**
+**https://drive.google.com/drive/folders/1cr4MrM9sfZbX1TzHWSBcW9K_6Rww-1d9?usp=drive_link**
 
 ## Deployment
 
-The final model is deployed using **Streamlit**, allowing users to upload a tissue image and receive a predicted class label in real time.
+The final model is deployed **locally** using **Streamlit**, allowing users to upload a tissue image and receive a predicted class label in real time.
+
+## How to Run the Project Locally
+
+### Step 1: Clone the Repository
+```
+git clone https://https://github.com/dishydammy/Lung-Colon-Disease-Image-Classification.git
+cd Lung-Colon-Disease-Image-Classification
+```
+
+### Step 2: Create a Virtual Environment
+```
+python -m venv venv
+```
+
+### Step 3: Activate the Virtual Environment
+```
+source venv/bin/activate
+```
+
+### Step 4: Install Dependencies
+```
+pip install -r requirements.txt
+```
+
+### Step 5: Download the Trained Model
+- Go to the model download link provided above.
+- Save the .keras model file in the project root directory (where app.py is located).
+
+### Step 6: Run the Streamlit App
+```
+streamlit run app.py
+```
+This will open the app in your default browser. Upload an image to get the prediction.
+
 
 ## Project Folder Structure
 
@@ -61,7 +96,7 @@ Lung-Colon-Disease-Classification/
 │
 ├── model/ # Trained TensorFlow model
 ├── app/ # Streamlit app code
-├── Lung_Colon_Image Classifier.ipnyb/ # Training and preprocessing code
+├── Lung_Colon_Image Classifier.ipnyb/ # Training and preprocessing notebook
 ├── README.md # Project documentation
 └── requirements.txt
 ```
